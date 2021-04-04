@@ -12,7 +12,9 @@
       "Segoe UI Emoji";
   }
 
-  h1 {
+  h1,
+  input,
+  select {
     background: -webkit-linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 62, 126, 1)
@@ -60,5 +62,31 @@
         rgba(255, 255, 255, 0.9)
       ),
       #3cc13b;
+  }
+  .card-line {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+      ),
+      #c2c9d1;
+    /* box-shadow: 0px 0.5px 0px #c2c9d1; */
+  }
+  .submission-btn:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+      ),
+      #003e7e;
+  }
+
+  .submission-btn:focus {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+      ),
+      #003e7e;
   }
 }
