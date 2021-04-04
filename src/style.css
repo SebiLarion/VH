@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji";
+  }
+
+  h1 {
+    background: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 62, 126, 1)
+    );
+    -webkit-background-clip: text;
+  }
+}
+
+@layer components {
+  .header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      #003e7e;
+  }
+
+  .event {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.75),
+        rgba(255, 255, 255, 0.75)
+      ),
+      #c2c9d1;
+  }
+
+  .tag:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+      ),
+      #007c8f;
+  }
+
+  .tag:focus {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+      ),
+      #007c8f;
+  }
+  .succes {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+      ),
+      #3cc13b;
+  }
+}
