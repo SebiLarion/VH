@@ -226,6 +226,7 @@
             <h1 class="text-sm">100</h1>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
+              id="open-modal"
             >
               Preview
             </button>
@@ -520,5 +521,216 @@
         </div>
       </div>
     </div>
+    <!-- modal window -->
+
+    <div id="modal" class="modal">
+      <div class="flex justify-end mr-6 mt-5">
+        <button id="close-modal" class="p-3">
+          <svg
+            width="14"
+            height="14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7 14 1.41z"
+              fill="#C2C9D1"
+            />
+            <path
+              d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7 14 1.41z"
+              fill="#000"
+              fill-opacity=".25"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="flex">
+        <div class="flex flex-col border-r px-6 w-52 mt-12">
+          <a
+            href="#information"
+            class="mb-2.5 py-1.5 pl-2 pr-6 text-gray-400 hover:text-darker-blue focus:text-darker-blue text-sm font-medium submission-btn rounded-lg"
+            >1. Information</a
+          >
+          <button
+            class="mb-2.5 py-1.5 pl-2 pr-6 text-gray-400 hover:text-darker-blue focus:text-darker-blue text-sm font-medium submission-btn rounded-lg"
+            id="uploadsbtn"
+          >
+            2. Uploads Files
+          </button>
+          <a
+            href="#"
+            class="mb-2.5 py-1.5 pl-2 pr-6 text-gray-400 hover:text-darker-blue focus:text-darker-blue text-sm font-medium submission-btn rounded-lg"
+            >3. Preview</a
+          >
+        </div>
+        <!-- information form -->
+        <div class="mx-6 w-full mt-12" id="information">
+          <h1 class="font font-medium">Submission information</h1>
+          <form action="/" method="post">
+            <div class="flex flex-col mt-5">
+              <label
+                for="categories"
+                class="text-xs font-medium text-black opacity-50"
+                >Categories</label
+              >
+              <select
+                name="categories"
+                id="categories"
+                class="text-sm border rounded-lg py-2.5 pl-2"
+              >
+                <option value="category_1">Category 1</option>
+                <option value="category_2">Category 2</option>
+                <option value="category_3">Category 3</option>
+              </select>
+            </div>
+            <div class="flex flex-col mt-5">
+              <label
+                for="submission_title"
+                class="text-xs font-medium text-black opacity-50"
+                >Submission Title</label
+              >
+              <input
+                type="text"
+                name="submission_title"
+                id="submission_title"
+                placeholder="First Draft"
+                class="text-sm border rounded-lg py-2.5 pl-2"
+              />
+            </div>
+            <div class="flex flex-col mt-5">
+              <label
+                for="contestant_name"
+                class="text-xs font-medium text-black opacity-50"
+                >Contestant Name</label
+              >
+              <input
+                type="text"
+                name="contestant_name"
+                id="contestant_name"
+                placeholder="Florencia"
+                class="text-sm border rounded-lg py-2.5 pl-2"
+              />
+            </div>
+            <div class="flex flex-col mt-5">
+              <label
+                for="contestant_school"
+                class="text-xs font-medium text-black opacity-50"
+                >Contestant School</label
+              >
+              <input
+                type="text"
+                name="contestant_school"
+                id="contestant_school"
+                placeholder="St. Thomas"
+                class="text-sm border rounded-lg py-2.5 pl-2"
+              />
+            </div>
+            <div class="flex flex-col mt-5">
+              <textarea
+                class="text-sm border rounded-lg py-2.5 pl-2 focus:outline-none"
+                rows="4"
+                placeholder="This is a test"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <!-- Uploads files form -->
+        <div class="uploads mx-6 w-full mt-12" id="uploads">
+          <h1 class="font font-medium">Submitted <span>(4)</span></h1>
+          <div class="w-full border rounded flex items-center mt-6 py-1">
+            <svg
+              class="ml-1"
+              width="14"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#C2C9D1"
+              />
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#000"
+                fill-opacity=".25"
+              />
+            </svg>
+            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
+          </div>
+          <div class="w-full border rounded flex items-center mt-6 py-1">
+            <svg
+              class="ml-1"
+              width="14"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#C2C9D1"
+              />
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#000"
+                fill-opacity=".25"
+              />
+            </svg>
+            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
+          </div>
+          <div class="w-full border rounded flex items-center mt-6 py-1">
+            <svg
+              class="ml-1"
+              width="14"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#C2C9D1"
+              />
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#000"
+                fill-opacity=".25"
+              />
+            </svg>
+            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
+          </div>
+          <div class="w-full border rounded flex items-center mt-6 py-1">
+            <svg
+              class="ml-1"
+              width="14"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#C2C9D1"
+              />
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#000"
+                fill-opacity=".25"
+              />
+            </svg>
+            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
+          </div>
+          <div class="mt-5">
+            <button
+              class="bg-darker-blue text-white rounded-lg px-4 py-2 focus:outline-none flex items-center justify-center text-sm font-medium"
+            >
+              Download files
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
