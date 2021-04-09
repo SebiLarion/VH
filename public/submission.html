@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Preview Submission</title>
+  </head>
+  <body>
+    <div>
+      <div class="flex justify-end mr-6 mt-5">
+        <button class="p-3">
+          <svg
+            width="14"
+            height="14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7 14 1.41z"
+              fill="#C2C9D1"
+            />
+            <path
+              d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7 14 1.41z"
+              fill="#000"
+              fill-opacity=".25"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- Information Window -->
+      <div class="flex mt-6">
+        <div class="flex flex-col border-r px-6 w-52">
+          <button
+            class="text-left mb-2.5 py-1.5 pr-6 text-gray-400 hover:text-darker-blue focus:text-darker-blue text-sm font-medium hover:bg-gray-200 focus:bg-gray-200 rounded-lg"
+            id="info"
+          >
+            1. Information
+          </button>
+          <button
+            class="text-left mb-2.5 py-1.5 pr-6 text-gray-400 hover:text-darker-blue focus:text-darker-blue text-sm font-medium hover:bg-gray-200 focus:bg-gray-200 rounded-lg"
+            id="uploadBtn"
+          >
+            2. Uploads Files
+          </button>
+          <button
+            id="previewBtn"
+            class="text-left mb-2.5 py-1.5 pr-6 text-gray-400 hover:text-darker-blue focus:text-darker-blue text-sm font-medium hover:bg-gray-200 focus:bg-gray-200 rounded-lg"
+          >
+            3. Preview
+          </button>
+        </div>
+        <!-- information form -->
+        <div class="mx-6 w-full mt-1" id="information">
+          <h1 class="font font-medium">Submission information</h1>
+          <form action="/" method="post">
+            <div class="flex flex-col mt-5">
+              <label
+                for="categories"
+                class="text-xs font-medium text-black opacity-50"
+                >Categories</label
+              >
+              <select
+                name="categories"
+                id="categories"
+                class="text-sm border rounded-lg py-2.5 pl-2"
+                disabled="true"
+              >
+                <option value="category_1">Category 1</option>
+                <option value="category_2">Category 2</option>
+                <option value="category_3">Category 3</option>
+              </select>
+            </div>
+            <div class="flex flex-col mt-5">
+              <label
+                for="submission_title"
+                class="text-xs font-medium text-black opacity-50"
+                >Submission Title</label
+              >
+              <input
+                type="text"
+                name="submission_title"
+                id="submission_title"
+                value="First Draft"
+                class="text-sm border rounded-lg py-2.5 pl-2"
+                readonly
+              />
+            </div>
+            <div class="flex flex-col mt-5">
+              <label
+                for="contestant_name"
+                class="text-xs font-medium text-black opacity-50"
+                >Contestant Name</label
+              >
+              <input
+                type="text"
+                name="contestant_name"
+                id="contestant_name"
+                value="Florencia"
+                class="text-sm border rounded-lg py-2.5 pl-2"
+                readonly
+              />
+            </div>
+            <div class="flex flex-col mt-5">
+              <label
+                for="contestant_school"
+                class="text-xs font-medium text-black opacity-50"
+                >Contestant School</label
+              >
+              <input
+                type="text"
+                name="contestant_school"
+                id="contestant_school"
+                value="St. Thomas"
+                class="text-sm border rounded-lg py-2.5 pl-2"
+                readonly
+              />
+            </div>
+            <div class="flex flex-col mt-5">
+              <textarea
+                class="text-sm border rounded-lg py-2.5 pl-2 focus:outline-none"
+                rows="4"
+                placeholder="This is a test"
+                readonly
+              ></textarea>
+            </div>
+          </form>
+        </div>
+
+        <!-- Uploads files form -->
+        <div class="mx-6 mt-1 w-full hidden" id="uploads">
+          <h1 class="font font-medium">Submitted <span>(4)</span></h1>
+          <div class="w-full border rounded flex items-center mt-6 py-1">
+            <svg
+              class="ml-1"
+              width="14"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#C2C9D1"
+              />
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#000"
+                fill-opacity=".25"
+              />
+            </svg>
+            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
+          </div>
+          <div class="w-full border rounded flex items-center mt-6 py-1">
+            <svg
+              class="ml-1"
+              width="14"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#C2C9D1"
+              />
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#000"
+                fill-opacity=".25"
+              />
+            </svg>
+            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
+          </div>
+          <div class="w-full border rounded flex items-center mt-6 py-1">
+            <svg
+              class="ml-1"
+              width="14"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#C2C9D1"
+              />
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#000"
+                fill-opacity=".25"
+              />
+            </svg>
+            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
+          </div>
+          <div class="w-full border rounded flex items-center mt-6 py-1">
+            <svg
+              class="ml-1"
+              width="14"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#C2C9D1"
+              />
+              <path
+                d="M3.667 12.333h6.667V14H3.667v-1.667zm0-3.333h6.667v1.667H3.667V9zm5-8.333H2c-.917 0-1.667.75-1.667 1.666v13.334c0 .916.742 1.666 1.659 1.666H12c.917 0 1.667-.75 1.667-1.666v-10l-5-5zm3.333 15H2V2.333h5.833V6.5H12v9.167z"
+                fill="#000"
+                fill-opacity=".25"
+              />
+            </svg>
+            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
+          </div>
+          <div class="mt-5">
+            <button
+              class="bg-darker-blue text-white rounded-lg px-4 py-2 focus:outline-none flex items-center justify-center text-sm font-medium"
+            >
+              Download files
+            </button>
+          </div>
+        </div>
+        <!-- preview files form -->
+        <div class="mx-6 mt-1 w-full hidden" id="preview">
+          <h1 class="font font-medium">Files preview</h1>
+          <video
+            class="mt-5 max-w-max"
+            width="750"
+            height="209"
+            controls
+            src="https://pixabay.com/videos/download/video-31377_tiny.mp4?attachment"
+          ></video>
+
+          <div class="mt-5 flex items-center">
+            <div>
+              <button class="p-2 ml-2">
+                <svg
+                  width="8"
+                  height="13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.41 11.09L2.83 6.5l4.58-4.59L6 .5l-6 6 6 6 1.41-1.41z"
+                    fill="#C2C9D1"
+                  />
+                  <path
+                    d="M7.41 11.09L2.83 6.5l4.58-4.59L6 .5l-6 6 6 6 1.41-1.41z"
+                    fill="#000"
+                    fill-opacity=".25"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="flex">
+              <div class="rounded-md shadow-lg ml-5">
+                <div
+                  class="bg-cover bg-center w-36 h-24"
+                  style="background-image: url(./img/Rectangle.png)"
+                ></div>
+                <h1 class="ml-2 mt-1 mb-1.5 text-xs">Filename.mp4</h1>
+              </div>
+              <div class="ml-5">
+                <div
+                  class="bg-cover bg-center w-36 h-24 rounded-md"
+                  style="background-image: url(./img/Rectangle.png)"
+                ></div>
+                <h1 class="mt-1 mb-1.5 text-xs">Filename.png</h1>
+              </div>
+              <div class="ml-5">
+                <div
+                  class="bg-gray-200 w-36 h-24 rounded-md flex items-center justify-center"
+                >
+                  <svg
+                    width="39"
+                    height="32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M31.44 3.605c-.874-.556-2.065-.238-2.621.636s-.318 2.065.556 2.62c3.177 1.987 5.083 5.402 5.083 9.056 0 3.733-1.906 7.148-5.083 9.134-.874.556-1.112 1.747-.556 2.62.477.875 1.668 1.192 2.621.636 4.21-2.7 6.83-7.307 6.83-12.39 0-5.004-2.62-9.611-6.83-12.312zM26.992 9.88c-.953-.556-2.065-.238-2.621.715-.476.953-.159 2.065.794 2.621.953.556 1.668 1.589 1.668 2.7 0 1.192-.715 2.225-1.668 2.78-.953.557-1.27 1.668-.794 2.622.556.953 1.668 1.27 2.621.714 2.224-1.19 3.654-3.574 3.654-6.115 0-2.463-1.43-4.845-3.654-6.037zM18.493.667c-.476 0-.953.238-1.27.635l-7.07 6.99H2.053c-1.112 0-1.906.873-1.906 1.906v11.437c0 1.112.794 1.907 1.906 1.907h8.102l7.069 7.069c.317.397.794.556 1.27.556 1.033 0 1.986-.715 1.986-1.907V2.652c0-1.191-.953-1.985-1.986-1.985zm-1.826 24.066l-5.004-5.004H3.958v-7.625h7.705l5.004-4.924v17.553z"
+                      fill="#007C8F"
+                    />
+                  </svg>
+                </div>
+                <h1 class="mt-1 mb-1.5 text-xs">Filename.wav</h1>
+              </div>
+              <div class="ml-5">
+                <div class="bg-gray-200 w-36 h-24 rounded-md"></div>
+                <h1 class="mt-1 mb-1.5 text-xs">Filename.pdf</h1>
+              </div>
+            </div>
+            <div class="ml-8">
+              <button class="p-2">
+                <svg
+                  width="8"
+                  height="13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M.59 1.91L5.17 6.5.59 11.09 2 12.5l6-6-6-6L.59 1.91z"
+                    fill="#C2C9D1"
+                  />
+                  <path
+                    d="M.59 1.91L5.17 6.5.59 11.09 2 12.5l6-6-6-6L.59 1.91z"
+                    fill="#000"
+                    fill-opacity=".25"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
