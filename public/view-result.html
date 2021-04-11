@@ -11,13 +11,16 @@
     <!-- TopNav Section -->
 
     <div class="bg-darker-blue">
-      <div class="flex py-3 px-8 bg-black bg-opacity-50">
+      <div
+        class="flex py-3 px-8 bg-black bg-opacity-50 justify-center sm:justify-start"
+      >
         <img src="./img/logo.png" alt="logo" />
         <div class="pl-3 text-white text-base leading-5">Varsity Hypes</div>
       </div>
     </div>
-    <div class="mt-14 mx-64">
-      <div class="flex mx-auto">
+
+    <div class="mt-14 mx-5 lg:mx-32 xl:mx-64">
+      <div class="sm:flex mx-auto hidden">
         <div>
           <svg
             width="20"
@@ -52,9 +55,14 @@
         </div>
         <p class="ml-2 text-sm text-twitter-blue">Activity Detail</p>
       </div>
-      <div class="mt-14 flex justify-center">
-        <h1 class="font-bold text-4xl">About the Activity</h1>
+      <div class="mt-10 text-white">
+        <p
+          class="text-center font-bold text-2xl sm:text-4xl bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+        >
+          Find Activities Rules
+        </p>
       </div>
+
       <div class="mt-10 rounded shadow-lg border px-5 pt-5 pb-7">
         <div class="flex">
           <h2 class="text-darker-blue font-bold text-2xl">2D Mix</h2>
@@ -143,30 +151,35 @@
           </div>
         </div>
       </div>
-      <div class="mt-32 flex justify-center">
-        <h1 class="font-bold text-4xl">Activity Results</h1>
+      <div class="mt-16 sm:mt-32 text-white flex justify-center">
+        <h1
+          class="font-bold text-2xl sm:text-4xl bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+        >
+          Activity Results
+        </h1>
       </div>
+
       <div class="mt-16 border-b border-darker-blue">
         <div class="mt-5 flex">
           <div class="px-2">
             <button
               class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
             >
-              <h1>Category 1</h1>
+              <p>Category 1</p>
             </button>
           </div>
           <div class="px-2">
             <button
               class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
             >
-              <h1>Category 2</h1>
+              <p>Category 2</p>
             </button>
           </div>
           <div class="px-2 relative">
             <button
               class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
             >
-              <h1>Category 3</h1>
+              <p>Category 3</p>
             </button>
           </div>
         </div>
@@ -209,15 +222,23 @@
       <div class="mt-10 mx-16">
         <div class="flex justify-between border-b">
           <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 bg-yellow-400 rounded-md text-center">
-              <h1>1</h1>
+            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                1
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -225,7 +246,89 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">100</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              100
+            </p>
+            <button
+              class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
+            >
+              Preview
+            </button>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between bg-gray-50 border-b">
+            <div class="mt-2.5 flex">
+              <div class="mt-1.5 w-7 h-6 rounded-md text-center">
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+                >
+                  2
+                </p>
+              </div>
+              <div class="ml-5">
+                <img src="./img/Avatar.png" alt="Avatar" />
+              </div>
+              <div class="ml-2.5">
+                <div class="h-5 text-sm">
+                  <p
+                    class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                  >
+                    James Moris
+                  </p>
+                </div>
+                <div class="h-5 text-xs text-gray-400">
+                  <p>School Name</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <p
+                class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+              >
+                90
+              </p>
+              <button
+                class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
+              >
+                Preview
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between border-b">
+          <div class="mt-2.5 flex">
+            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                3
+              </p>
+            </div>
+            <div class="ml-5">
+              <img src="./img/Avatar.png" alt="Avatar" />
+            </div>
+            <div class="ml-2.5">
+              <div class="h-5 text-sm">
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
+              </div>
+              <div class="h-5 text-xs text-gray-400">
+                <p>School Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              80
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -235,15 +338,23 @@
         </div>
         <div class="flex justify-between bg-gray-50 border-b">
           <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 bg-gray-600 rounded-md text-center">
-              <h1>2</h1>
+            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                4
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -251,7 +362,49 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">90</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              70
+            </p>
+            <button
+              class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
+            >
+              Preview
+            </button>
+          </div>
+        </div>
+        <div class="flex border-b justify-between">
+          <div class="mt-2.5 flex">
+            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                5
+              </p>
+            </div>
+            <div class="ml-5">
+              <img src="./img/Avatar.png" alt="Avatar" />
+            </div>
+            <div class="ml-2.5">
+              <div class="h-5 text-sm">
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
+              </div>
+              <div class="h-5 text-xs text-gray-400">
+                <p>School Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              60
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -261,15 +414,23 @@
         </div>
         <div class="flex justify-between border-b">
           <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 bg-yellow-700 rounded-md text-center">
-              <h1>3</h1>
+            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                6
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -277,7 +438,89 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">80</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              100
+            </p>
+            <button
+              class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
+            >
+              Preview
+            </button>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between bg-gray-50 border-b">
+            <div class="mt-2.5 flex">
+              <div class="mt-1.5 w-7 h-6 rounded-md text-center">
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+                >
+                  7
+                </p>
+              </div>
+              <div class="ml-5">
+                <img src="./img/Avatar.png" alt="Avatar" />
+              </div>
+              <div class="ml-2.5">
+                <div class="h-5 text-sm">
+                  <p
+                    class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                  >
+                    James Moris
+                  </p>
+                </div>
+                <div class="h-5 text-xs text-gray-400">
+                  <p>School Name</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <p
+                class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+              >
+                90
+              </p>
+              <button
+                class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
+              >
+                Preview
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between border-b">
+          <div class="mt-2.5 flex">
+            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                8
+              </p>
+            </div>
+            <div class="ml-5">
+              <img src="./img/Avatar.png" alt="Avatar" />
+            </div>
+            <div class="ml-2.5">
+              <div class="h-5 text-sm">
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
+              </div>
+              <div class="h-5 text-xs text-gray-400">
+                <p>School Name</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              80
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -288,14 +531,22 @@
         <div class="flex justify-between bg-gray-50 border-b">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>4</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                9
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -303,7 +554,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">70</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              70
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -314,14 +569,22 @@
         <div class="flex border-b justify-between">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>5</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                10
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -329,137 +592,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">60</h1>
-            <button
-              class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
             >
-              Preview
-            </button>
-          </div>
-        </div>
-        <div class="flex justify-between bg-gray-50 border-b">
-          <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>6</h1>
-            </div>
-            <div class="ml-5">
-              <img src="./img/Avatar.png" alt="Avatar" />
-            </div>
-            <div class="ml-2.5">
-              <div class="h-5 text-sm">
-                <h1>James Moris</h1>
-              </div>
-              <div class="h-5 text-xs text-gray-400">
-                <p>School Name</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <h1 class="text-sm">100</h1>
-            <button
-              class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
-            >
-              Preview
-            </button>
-          </div>
-        </div>
-        <div class="flex border-b justify-between">
-          <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>7</h1>
-            </div>
-            <div class="ml-5">
-              <img src="./img/Avatar.png" alt="Avatar" />
-            </div>
-            <div class="ml-2.5">
-              <div class="h-5 text-sm">
-                <h1>James Moris</h1>
-              </div>
-              <div class="h-5 text-xs text-gray-400">
-                <p>School Name</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <h1 class="text-sm">90</h1>
-            <button
-              class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
-            >
-              Preview
-            </button>
-          </div>
-        </div>
-        <div class="flex justify-between bg-gray-50 border-b">
-          <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>8</h1>
-            </div>
-            <div class="ml-5">
-              <img src="./img/Avatar.png" alt="Avatar" />
-            </div>
-            <div class="ml-2.5">
-              <div class="h-5 text-sm">
-                <h1>James Moris</h1>
-              </div>
-              <div class="h-5 text-xs text-gray-400">
-                <p>School Name</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <h1 class="text-sm">80</h1>
-            <button
-              class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
-            >
-              Preview
-            </button>
-          </div>
-        </div>
-        <div class="flex border-b justify-between">
-          <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>9</h1>
-            </div>
-            <div class="ml-5">
-              <img src="./img/Avatar.png" alt="Avatar" />
-            </div>
-            <div class="ml-2.5">
-              <div class="h-5 text-sm">
-                <h1>James Moris</h1>
-              </div>
-              <div class="h-5 text-xs text-gray-400">
-                <p>School Name</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <h1 class="text-sm">70</h1>
-            <button
-              class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
-            >
-              Preview
-            </button>
-          </div>
-        </div>
-        <div class="flex justify-between bg-gray-50 border-b">
-          <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>10</h1>
-            </div>
-            <div class="ml-5">
-              <img src="./img/Avatar.png" alt="Avatar" />
-            </div>
-            <div class="ml-2.5">
-              <div class="h-5 text-sm">
-                <h1>James Moris</h1>
-              </div>
-              <div class="h-5 text-xs text-gray-400">
-                <p>School Name</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <h1 class="text-sm">60</h1>
+              60
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -469,16 +606,42 @@
         </div>
       </div>
       <div class="mt-11 mb-36 mr-12 flex justify-end">
-        <div class="flex items-center">
-          <h1 class="text-xs">Rows per page:</h1>
+        <div class="flex items-center bg-white">
+          <p
+            class="text-xs bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+          >
+            Rows per page:
+          </p>
         </div>
         <select name="pages" id="pages" class="ml-3 text-xs">
-          <option value="10"><h1>10</h1></option>
-          <option value="20"><h1>20</h1></option>
-          <option value="30"><h1>30</h1></option>
+          <option value="10">
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              10
+            </p>
+          </option>
+          <option value="10">
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              20
+            </p>
+          </option>
+          <option value="10">
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              30
+            </p>
+          </option>
         </select>
         <div class="flex items-center">
-          <h1 class="text-xs ml-36">1-10 of 30 items</h1>
+          <p
+            class="text-xs ml-36 bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+          >
+            1-10 of 30 items
+          </p>
         </div>
         <div class="ml-12">
           <button>

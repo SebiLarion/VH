@@ -19,6 +19,13 @@
       </div>
     </div>
 
+    <div class="text-2xl font-bold text-white ml-5 mt-6 sm:hidden">
+      <span
+        class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+        >Event Dashboard</span
+      >
+    </div>
+
     <!-- Event Title Section -->
     <div class="bg-gray-200 mt-10 mx-5 lg:mx-32 xl:mx-64 flex">
       <div class="mt-5 mb-9 ml-8">
@@ -116,7 +123,7 @@
           Lorem ips dolor sit.
         </p>
         <div class="mt-3 flex flex-col sm:flex-row">
-          <div class="flex">
+          <div class="flex ml-1">
             <div>
               <svg
                 width="13"
@@ -139,7 +146,7 @@
               5 activities
             </p>
           </div>
-          <div class="flex sm:ml-4">
+          <div class="flex mt-1 sm:mt-0 sm:ml-4">
             <div>
               <svg
                 width="16"
@@ -168,10 +175,12 @@
 
     <!-- Find Section -->
 
-    <div class="mt-10">
-      <h1 class="text-center font-bold text-2xl sm:text-4xl">
+    <div class="mt-10 text-white">
+      <p
+        class="text-center font-bold text-2xl sm:text-4xl bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+      >
         Find Activities Rules
-      </h1>
+      </p>
     </div>
 
     <div class="mt-8 flex justify-center">
@@ -211,41 +220,41 @@
 
     <!-- Filter Section -->
     <div class="mt-10 flex w-full h-auto border-t border-b">
-      <div class="my-5 ml-6 text-darker-blue font-medium">
-        <p>Filter by Tags:</p>
+      <div class="my-6 ml-6 text-darker-blue font-medium">
+        <p class="h-8 w-28">Filter by Tags:</p>
       </div>
-      <div class="mx-auto pr-40 flex">
+      <div class="mx-auto pr-40 flex overflow-clip">
         <div class="my-4 ml-2">
           <button
-            class="hover:bg-blue-100 focus:bg-blue-100 rounded-lg px-4 py-2 text-black opacity-50 focus:outline-none"
+            class="hover:bg-blue-100 focus:bg-blue-100 h-10 w-20 rounded-lg px-4 py-2 text-black opacity-50 focus:outline-none"
           >
             Tag 1
           </button>
         </div>
         <div class="my-4 ml-2">
           <button
-            class="hover:bg-blue-100 focus:bg-blue-100 rounded-lg px-4 py-2 text-black opacity-50 focus:outline-none"
+            class="hover:bg-blue-100 focus:bg-blue-100 h-10 w-20 rounded-lg px-4 py-2 text-black opacity-50 focus:outline-none"
           >
             Tag 2
           </button>
         </div>
         <div class="my-4 ml-2">
           <button
-            class="hover:bg-blue-100 focus:bg-blue-100 rounded-lg px-4 py-2 text-black opacity-50 focus:outline-none"
+            class="hover:bg-blue-100 focus:bg-blue-100 h-10 w-20 rounded-lg px-4 py-2 text-black opacity-50 focus:outline-none"
           >
             Tag 3
           </button>
         </div>
         <div class="my-4 ml-2">
           <button
-            class="hover:bg-blue-100 focus:bg-blue-100 rounded-lg px-4 py-2 text-black opacity-50 focus:outline-none"
+            class="hover:bg-blue-100 focus:bg-blue-100 h-10 w-20 rounded-lg px-4 py-2 text-black opacity-50 focus:outline-none"
           >
             Tag 4
           </button>
         </div>
         <div class="my-4 ml-2">
           <button
-            class="hover:bg-blue-100 focus:bg-blue-100 rounded-lg px-4 py-2 text-black opacity-50 focus:outline-none"
+            class="hover:bg-blue-100 focus:bg-blue-100 h-10 w-20 rounded-lg px-4 py-2 text-black opacity-50 focus:outline-none"
           >
             Tag 5
           </button>
@@ -263,7 +272,13 @@
       <!-- First -->
       <div class="bg-white rounded-md shadow-xl sm:mr-7 px-5">
         <div class="my-5 flex">
-          <h1 class="text-2xl font-bold mr-2.5">Activity Name</h1>
+          <div class="text-2xl font-bold mr-2.5 text-white">
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Activity Name
+            </p>
+          </div>
           <button
             class="bg-green-50 px-2 py-1 border rounded text-xs font-medium focus:outline-none"
           >
@@ -286,12 +301,20 @@
           <button
             class="rounded-lg px-2 py-1.5 mr-3 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
           <button
             class="rounded-lg px-2 py-1.5 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
         </div>
         <div class="ml-1 mt-5 flex">
@@ -351,39 +374,51 @@
               <button
                 class="relative px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
               >
-                <h1>Category 1</h1>
+                <p>Category 1</p>
               </button>
             </div>
             <div class="px-2 border-darker-blue border-b">
               <button
                 class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
               >
-                <h1>Category 2</h1>
+                <p>Category 1</p>
               </button>
             </div>
             <div class="px-2 border-darker-blue border-b">
               <button
                 class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
               >
-                <h1>Category 3</h1>
+                <p>Category 1</p>
               </button>
             </div>
           </div>
         </div>
-        <div class="pt-5 mr-24 flex justify-end">
-          <h1 class="text-sm font-bold">Score</h1>
+        <div class="pt-5 mr-24 flex justify-end bg-white">
+          <p
+            class="text-sm font-bold bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+          >
+            Score
+          </p>
         </div>
         <div class="flex justify-between">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 bg-yellow-400 rounded-md text-center">
-              <h1>1</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                1
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -391,7 +426,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">100</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              100
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -402,15 +441,23 @@
         <div>
           <div class="flex justify-between bg-gray-50">
             <div class="mt-2.5 flex">
-              <div class="mt-1.5 w-7 h-6 bg-gray-600 rounded-md text-center">
-                <h1>2</h1>
+              <div class="mt-1.5 w-7 h-6 bg-gray-400 rounded-md text-center">
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+                >
+                  2
+                </p>
               </div>
               <div class="ml-5">
                 <img src="./img/Avatar.png" alt="Avatar" />
               </div>
               <div class="ml-2.5">
                 <div class="h-5 text-sm">
-                  <h1>James Moris</h1>
+                  <p
+                    class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                  >
+                    James Moris
+                  </p>
                 </div>
                 <div class="h-5 text-xs text-gray-400">
                   <p>School Name</p>
@@ -418,7 +465,11 @@
               </div>
             </div>
             <div class="flex items-center">
-              <h1 class="text-sm">90</h1>
+              <p
+                class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+              >
+                90
+              </p>
               <button
                 class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
               >
@@ -429,15 +480,23 @@
         </div>
         <div class="flex justify-between">
           <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 bg-yellow-700 rounded-md text-center">
-              <h1>3</h1>
+            <div class="mt-1.5 w-7 h-6 bg-yellow-600 rounded-md text-center">
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                3
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -445,7 +504,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">80</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              80
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -456,14 +519,22 @@
         <div class="flex justify-between bg-gray-50">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>4</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                4
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -471,7 +542,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">70</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              70
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -482,14 +557,22 @@
         <div class="flex border-b justify-between">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>5</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                5
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -497,7 +580,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">60</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              60
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -517,7 +604,13 @@
       <!-- Second -->
       <div class="bg-white rounded-md shadow-xl px-5 mt-14 sm:mt-0">
         <div class="my-5 flex">
-          <h1 class="text-2xl font-bold mr-2.5">Activity Name</h1>
+          <div class="text-2xl font-bold mr-2.5 text-white">
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Activity Name
+            </p>
+          </div>
           <button
             class="px-2 py-1 bg-gray-200 rounded border border-gray-400 text-xs font-medium focus:outline-none"
           >
@@ -535,17 +628,29 @@
           <button
             class="rounded-lg px-2 py-1.5 mr-3 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
           <button
             class="rounded-lg px-2 py-1.5 mr-3 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
           <button
             class="rounded-lg px-2 py-1.5 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
         </div>
         <div class="ml-1 mt-5 flex">
@@ -602,7 +707,11 @@
         <div
           class="mt-6 mb-5 bg-gray-200 flex flex-col justify-center items-center"
         >
-          <h1 class="mt-44">Waiting for judgments</h1>
+          <p
+            class="mt-44 bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium text-base sm:font-bold sm:text-2xl"
+          >
+            Waiting for judgments
+          </p>
           <div class="mt-7">
             <button
               class="text-darker-blue border border-darker-blue rounded-md px-5 py-2.5 text-sm font-medium focus:outline-none mb-40"
@@ -618,7 +727,13 @@
       <!-- Third -->
       <div class="bg-white rounded-md shadow-xl sm:mr-7 px-5">
         <div class="my-5 flex">
-          <h1 class="text-2xl font-bold mr-2.5">Activity Name</h1>
+          <div class="text-2xl font-bold mr-2.5 text-white">
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Activity Name
+            </p>
+          </div>
           <button
             class="bg-green-50 px-2 py-1 border rounded text-xs font-medium focus:outline-none"
           >
@@ -641,12 +756,20 @@
           <button
             class="rounded-lg px-2 py-1.5 mr-3 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
           <button
             class="rounded-lg px-2 py-1.5 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
         </div>
         <div class="ml-1 mt-5 flex">
@@ -704,41 +827,53 @@
           <div class="mt-5 flex">
             <div class="px-2 border-darker-blue border-b">
               <button
-                class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
+                class="relative px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
               >
-                <h1>Category 1</h1>
+                <p>Category 1</p>
               </button>
             </div>
             <div class="px-2 border-darker-blue border-b">
               <button
                 class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
               >
-                <h1>Category 2</h1>
+                <p>Category 1</p>
               </button>
             </div>
             <div class="px-2 border-darker-blue border-b">
               <button
                 class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
               >
-                <h1>Category 3</h1>
+                <p>Category 1</p>
               </button>
             </div>
           </div>
         </div>
-        <div class="mt-5 mr-24 flex justify-end">
-          <h1 class="text-sm font-bold">Score</h1>
+        <div class="pt-5 mr-24 flex justify-end bg-white">
+          <p
+            class="text-sm font-bold bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+          >
+            Score
+          </p>
         </div>
         <div class="flex justify-between">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 bg-yellow-400 rounded-md text-center">
-              <h1>1</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                1
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -746,7 +881,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">100</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              100
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -754,43 +893,65 @@
             </button>
           </div>
         </div>
-        <div class="flex justify-between bg-gray-50">
-          <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 bg-gray-600 rounded-md text-center">
-              <h1>2</h1>
-            </div>
-            <div class="ml-5">
-              <img src="./img/Avatar.png" alt="Avatar" />
-            </div>
-            <div class="ml-2.5">
-              <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+        <div>
+          <div class="flex justify-between bg-gray-50">
+            <div class="mt-2.5 flex">
+              <div class="mt-1.5 w-7 h-6 bg-gray-400 rounded-md text-center">
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+                >
+                  2
+                </p>
               </div>
-              <div class="h-5 text-xs text-gray-400">
-                <p>School Name</p>
+              <div class="ml-5">
+                <img src="./img/Avatar.png" alt="Avatar" />
+              </div>
+              <div class="ml-2.5">
+                <div class="h-5 text-sm">
+                  <p
+                    class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                  >
+                    James Moris
+                  </p>
+                </div>
+                <div class="h-5 text-xs text-gray-400">
+                  <p>School Name</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="flex items-center">
-            <h1 class="text-sm">90</h1>
-            <button
-              class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
-            >
-              Preview
-            </button>
+            <div class="flex items-center">
+              <p
+                class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+              >
+                90
+              </p>
+              <button
+                class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
+              >
+                Preview
+              </button>
+            </div>
           </div>
         </div>
         <div class="flex justify-between">
           <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 bg-yellow-700 rounded-md text-center">
-              <h1>3</h1>
+            <div class="mt-1.5 w-7 h-6 bg-yellow-600 rounded-md text-center">
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                3
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -798,7 +959,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">80</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              80
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -809,14 +974,22 @@
         <div class="flex justify-between bg-gray-50">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>4</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                4
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -824,7 +997,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">70</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              70
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -835,14 +1012,22 @@
         <div class="flex border-b justify-between">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>5</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                5
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -850,7 +1035,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">60</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              60
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -868,9 +1057,15 @@
       </div>
 
       <!-- Fourth -->
-      <div class="bg-white rounded-md shadow-xl px-5 mt-14 sm:mt-0">
+      <div class="bg-white rounded-md shadow-xl sm:mr-7 px-5">
         <div class="my-5 flex">
-          <h1 class="text-2xl font-bold mr-2.5">Activity Name</h1>
+          <div class="text-2xl font-bold mr-2.5 text-white">
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Activity Name
+            </p>
+          </div>
           <button
             class="bg-green-50 px-2 py-1 border rounded text-xs font-medium focus:outline-none"
           >
@@ -893,12 +1088,20 @@
           <button
             class="rounded-lg px-2 py-1.5 mr-3 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
           <button
             class="rounded-lg px-2 py-1.5 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
         </div>
         <div class="ml-1 mt-5 flex">
@@ -956,41 +1159,53 @@
           <div class="mt-5 flex">
             <div class="px-2 border-darker-blue border-b">
               <button
-                class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
+                class="relative px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
               >
-                <h1>Category 1</h1>
+                <p>Category 1</p>
               </button>
             </div>
             <div class="px-2 border-darker-blue border-b">
               <button
                 class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
               >
-                <h1>Category 2</h1>
+                <p>Category 1</p>
               </button>
             </div>
             <div class="px-2 border-darker-blue border-b">
               <button
                 class="px-4 py-3 text-sm font-medium rounded-t-lg border-t border-l border-r border-white focus:border-darker-blue focus:text-darker-blue focus:outline-none"
               >
-                <h1>Category 3</h1>
+                <p>Category 1</p>
               </button>
             </div>
           </div>
         </div>
-        <div class="mt-5 mr-24 flex justify-end">
-          <h1 class="text-sm font-bold">Score</h1>
+        <div class="pt-5 mr-24 flex justify-end bg-white">
+          <p
+            class="text-sm font-bold bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+          >
+            Score
+          </p>
         </div>
         <div class="flex justify-between">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 bg-yellow-400 rounded-md text-center">
-              <h1>1</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                1
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -998,7 +1213,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">100</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              100
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -1006,43 +1225,65 @@
             </button>
           </div>
         </div>
-        <div class="flex justify-between bg-gray-50">
-          <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 bg-gray-600 rounded-md text-center">
-              <h1>2</h1>
-            </div>
-            <div class="ml-5">
-              <img src="./img/Avatar.png" alt="Avatar" />
-            </div>
-            <div class="ml-2.5">
-              <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+        <div>
+          <div class="flex justify-between bg-gray-50">
+            <div class="mt-2.5 flex">
+              <div class="mt-1.5 w-7 h-6 bg-gray-400 rounded-md text-center">
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+                >
+                  2
+                </p>
               </div>
-              <div class="h-5 text-xs text-gray-400">
-                <p>School Name</p>
+              <div class="ml-5">
+                <img src="./img/Avatar.png" alt="Avatar" />
+              </div>
+              <div class="ml-2.5">
+                <div class="h-5 text-sm">
+                  <p
+                    class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                  >
+                    James Moris
+                  </p>
+                </div>
+                <div class="h-5 text-xs text-gray-400">
+                  <p>School Name</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="flex items-center">
-            <h1 class="text-sm">90</h1>
-            <button
-              class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
-            >
-              Preview
-            </button>
+            <div class="flex items-center">
+              <p
+                class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+              >
+                90
+              </p>
+              <button
+                class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
+              >
+                Preview
+              </button>
+            </div>
           </div>
         </div>
         <div class="flex justify-between">
           <div class="mt-2.5 flex">
-            <div class="mt-1.5 w-7 h-6 bg-yellow-700 rounded-md text-center">
-              <h1>3</h1>
+            <div class="mt-1.5 w-7 h-6 bg-yellow-600 rounded-md text-center">
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                3
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -1050,7 +1291,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">80</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              80
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -1061,14 +1306,22 @@
         <div class="flex justify-between bg-gray-50">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>4</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                4
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -1076,7 +1329,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">70</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              70
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
@@ -1087,14 +1344,22 @@
         <div class="flex border-b justify-between">
           <div class="mt-2.5 flex">
             <div class="mt-1.5 w-7 h-6 rounded-md text-center">
-              <h1>5</h1>
+              <p
+                class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+              >
+                5
+              </p>
             </div>
             <div class="ml-5">
               <img src="./img/Avatar.png" alt="Avatar" />
             </div>
             <div class="ml-2.5">
               <div class="h-5 text-sm">
-                <h1>James Moris</h1>
+                <p
+                  class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  James Moris
+                </p>
               </div>
               <div class="h-5 text-xs text-gray-400">
                 <p>School Name</p>
@@ -1102,7 +1367,11 @@
             </div>
           </div>
           <div class="flex items-center">
-            <h1 class="text-sm">60</h1>
+            <p
+              class="text-sm bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              60
+            </p>
             <button
               class="ml-10 text-xs text-light-teal py-1 px-2 border border-light-teal rounded-md"
             >
