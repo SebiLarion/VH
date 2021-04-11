@@ -9,14 +9,18 @@
   </head>
   <body>
     <!-- TopNav Section -->
-    <div class="header flex py-3 px-8">
-      <img src="./img/logo.png" alt="logo" />
-      <div class="pl-3 text-white text-base leading-5">Varsity Hypes</div>
+    <div class="bg-darker-blue">
+      <div
+        class="flex py-3 px-8 bg-black bg-opacity-50 justify-center sm:justify-start"
+      >
+        <img src="./img/logo.png" alt="logo" />
+        <div class="pl-3 text-white text-base leading-5">Varsity Hypes</div>
+      </div>
     </div>
     <!-- End TopNav -->
 
-    <div class="mt-14 mx-64">
-      <div class="flex mx-auto">
+    <div class="mt-14 mx-5 lg:mx-32 xl:mx-64">
+      <div class="sm:flex mx-auto hidden">
         <div>
           <svg
             width="20"
@@ -52,8 +56,32 @@
         <p class="ml-2 text-sm text-twitter-blue">Activity Detail</p>
       </div>
       <!-- Title Card -->
-      <div class="mt-14 flex justify-center">
-        <h1 class="font-bold text-4xl">About the Activity</h1>
+      <div class="mt-10 text-white flex items-center">
+        <div class="sm:hidden">
+          <svg
+            width="8"
+            height="13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.41 11.09L2.83 6.5l4.58-4.59L6 .5l-6 6 6 6 1.41-1.41z"
+              fill="#003E7E"
+            />
+            <path
+              d="M7.41 11.09L2.83 6.5l4.58-4.59L6 .5l-6 6 6 6 1.41-1.41z"
+              fill="#000"
+              fill-opacity=".5"
+            />
+          </svg>
+        </div>
+        <div class="mx-auto">
+          <p
+            class="font-bold text-2xl sm:text-4xl bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+          >
+            About the Activity
+          </p>
+        </div>
       </div>
       <div class="mt-10 rounded shadow-lg border px-5 pt-5 pb-7">
         <div class="flex">
@@ -78,17 +106,29 @@
           <button
             class="rounded-lg px-2 py-1.5 mr-3 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
           <button
             class="rounded-lg px-2 py-1.5 mr-3 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
           <button
             class="rounded-lg px-2 py-1.5 bg-gray-200 text-sm focus:outline-none"
           >
-            <h1>Chip Text</h1>
+            <p
+              class="bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Chip Text
+            </p>
           </button>
         </div>
         <div class="mt-4 flex">
@@ -144,8 +184,12 @@
         </div>
       </div>
       <!-- Body Card -->
-      <div class="mt-32 flex justify-center">
-        <h1 class="font-bold text-4xl">Activity Results</h1>
+      <div class="mt-16 sm:mt-32 text-white flex justify-center">
+        <h1
+          class="font-bold text-2xl sm:text-4xl bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+        >
+          Activity Results
+        </h1>
       </div>
       <div class="mt-16 border-b border-darker-blue">
         <div class="mt-5 flex">
@@ -173,8 +217,21 @@
         </div>
       </div>
       <div class="rounded-md bg-white">
-        <div class="mt-12 mb-10 mx-8 bg-gray-200 flex justify-center">
-          <h1 class="my-44 text-2xl font-bold">Waiting for judgments</h1>
+        <div
+          class="mt-6 mb-5 bg-gray-200 flex flex-col justify-center items-center"
+        >
+          <p
+            class="mt-44 bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-semibold text-base sm:font-bold sm:text-2xl"
+          >
+            Waiting for judgments
+          </p>
+          <div class="mt-7">
+            <button
+              class="text-darker-blue border border-darker-blue rounded-md px-5 py-2.5 text-sm font-semibold focus:outline-none mb-40"
+            >
+              View Activities Details
+            </button>
+          </div>
         </div>
       </div>
     </div>

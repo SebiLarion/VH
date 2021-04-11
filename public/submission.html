@@ -53,7 +53,13 @@
         </div>
         <!-- information form -->
         <div class="mx-6 w-full mt-1" id="information">
-          <h1 class="font font-medium">Submission information</h1>
+          <div class="bg-white">
+            <p
+              class="font-semibold bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              Submission information
+            </p>
+          </div>
           <form action="/" method="post">
             <div class="flex flex-col mt-5">
               <label
@@ -64,8 +70,7 @@
               <select
                 name="categories"
                 id="categories"
-                class="text-sm border rounded-lg py-2.5 pl-2"
-                disabled="true"
+                class="text-sm border rounded-lg py-2.5 pl-2 font-medium bg-gradient-to-t from-black to-darker-blue bg-clip-text"
               >
                 <option value="category_1">Category 1</option>
                 <option value="category_2">Category 2</option>
@@ -83,7 +88,7 @@
                 name="submission_title"
                 id="submission_title"
                 value="First Draft"
-                class="text-sm border rounded-lg py-2.5 pl-2"
+                class="text-sm border rounded-lg py-2.5 pl-2 font-medium bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
                 readonly
               />
             </div>
@@ -98,7 +103,7 @@
                 name="contestant_name"
                 id="contestant_name"
                 value="Florencia"
-                class="text-sm border rounded-lg py-2.5 pl-2"
+                class="text-sm border rounded-lg py-2.5 pl-2 font-medium bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
                 readonly
               />
             </div>
@@ -113,13 +118,13 @@
                 name="contestant_school"
                 id="contestant_school"
                 value="St. Thomas"
-                class="text-sm border rounded-lg py-2.5 pl-2"
+                class="text-sm border rounded-lg py-2.5 pl-2 font-medium bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
                 readonly
               />
             </div>
             <div class="flex flex-col mt-5">
               <textarea
-                class="text-sm border rounded-lg py-2.5 pl-2 focus:outline-none"
+                class="text-sm border rounded-lg py-2.5 pl-2 focus:outline-none bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
                 rows="4"
                 placeholder="This is a test"
                 readonly
@@ -129,8 +134,12 @@
         </div>
 
         <!-- Uploads files form -->
-        <div class="mx-6 mt-1 w-full hidden" id="uploads">
-          <h1 class="font font-medium">Submitted <span>(4)</span></h1>
+        <div class="mx-6 mt-1 w-full hidden bg-white" id="uploads">
+          <p
+            class="font font-semibold bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+          >
+            Submitted <span>(4)</span>
+          </p>
           <div class="w-full border rounded flex items-center mt-6 py-1">
             <svg
               class="ml-1"
@@ -149,7 +158,11 @@
                 fill-opacity=".25"
               />
             </svg>
-            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <p
+              class="ml-3 text-sm font-semibold bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              filename.pdf
+            </p>
             <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
           </div>
           <div class="w-full border rounded flex items-center mt-6 py-1">
@@ -170,7 +183,11 @@
                 fill-opacity=".25"
               />
             </svg>
-            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <p
+              class="ml-3 text-sm font-semibold bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              filename.pdf
+            </p>
             <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
           </div>
           <div class="w-full border rounded flex items-center mt-6 py-1">
@@ -191,7 +208,11 @@
                 fill-opacity=".25"
               />
             </svg>
-            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <p
+              class="ml-3 text-sm font-semibold bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              filename.pdf
+            </p>
             <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
           </div>
           <div class="w-full border rounded flex items-center mt-6 py-1">
@@ -212,7 +233,11 @@
                 fill-opacity=".25"
               />
             </svg>
-            <h1 class="ml-3 text-sm">filename.pdf</h1>
+            <p
+              class="ml-3 text-sm font-semibold bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+            >
+              filename.pdf
+            </p>
             <span class="ml-4 text-black opacity-50 text-sm">150KB</span>
           </div>
           <div class="mt-5">
@@ -224,8 +249,12 @@
           </div>
         </div>
         <!-- preview files form -->
-        <div class="mx-6 mt-1 w-full hidden" id="preview">
-          <h1 class="font font-medium">Files preview</h1>
+        <div class="mx-6 mt-1 w-full hidden bg-white" id="preview">
+          <p
+            class="font font-semibold bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text"
+          >
+            Files preview
+          </p>
           <video
             class="mt-5 max-w-max"
             width="750"
@@ -261,14 +290,22 @@
                   class="bg-cover bg-center w-36 h-24"
                   style="background-image: url(./img/Rectangle.png)"
                 ></div>
-                <h1 class="ml-2 mt-1 mb-1.5 text-xs">Filename.mp4</h1>
+                <p
+                  class="ml-2 mt-1 mb-1.5 text-xs bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  Filename.mp4
+                </p>
               </div>
               <div class="ml-5">
                 <div
                   class="bg-cover bg-center w-36 h-24 rounded-md"
                   style="background-image: url(./img/Rectangle.png)"
                 ></div>
-                <h1 class="mt-1 mb-1.5 text-xs">Filename.png</h1>
+                <p
+                  class="mt-1 mb-1.5 text-xs bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  Filename.png
+                </p>
               </div>
               <div class="ml-5">
                 <div
@@ -286,11 +323,19 @@
                     />
                   </svg>
                 </div>
-                <h1 class="mt-1 mb-1.5 text-xs">Filename.wav</h1>
+                <p
+                  class="mt-1 mb-1.5 text-xs bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  Filename.wav
+                </p>
               </div>
               <div class="ml-5">
                 <div class="bg-gray-200 w-36 h-24 rounded-md"></div>
-                <h1 class="mt-1 mb-1.5 text-xs">Filename.pdf</h1>
+                <p
+                  class="mt-1 mb-1.5 text-xs bg-gradient-to-t from-black to-darker-blue text-transparent bg-clip-text font-medium"
+                >
+                  Filename.pdf
+                </p>
               </div>
             </div>
             <div class="ml-8">

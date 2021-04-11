@@ -558,16 +558,6 @@ body {
       "Segoe UI Emoji";
 }
 
-h1,
-  input,
-  select {
-  background: -webkit-linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 62, 126, 1)
-    );
-  -webkit-background-clip: text;
-}
-
 .container{
   width: 100%;
 }
